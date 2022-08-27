@@ -37,3 +37,26 @@ header .slogan {
   font-weight: 500;
   margin-top: 20px;
 }
+form {
+  text-align: center;
+  margin-top: 50px;
+}
+form input.submit {
+  width: 80%;
+  margin-top: 20px;
+  height: 40px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+input.textfield {
+  width: 255px;
+  height: 30px;
+  margin: 0 25px;
+  border: 1px solid #D5D4D8;
+  padding: 10px;
+  font-size: 14px;
+}
