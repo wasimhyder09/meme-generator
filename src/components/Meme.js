@@ -1,9 +1,24 @@
+import {useState} from 'react';
+import memeData from "../memesData"
+
 export default function Meme() {
+  const [memeImage, setMemeImage] = useState("")
+  let url;
+
+  function GetMemeImage() {
+    const memeArray = memeData.data.memes;
+    const randomMeme = memeArray[Math.floor(Math.random() * memeArray.length)];
+    url = randomMeme.url;
+    setMemeImage(url);
+  }
   return (
-    <form action="">
-      <input type="text" name="topText" className="textfield top-text" placeholder="Top text" />
-      <input type="text" name="buttomText" className="textfield bottom-text" placeholder="Bottom text" />
-      <input type="submit" className="submit" value="Get a new meme image 🖼" />
-    </form>
+    <div className="main">
+      <div className="form">
+        <input type="text" name="topText" className="textfield top-text" placeholder="Top text" />
+        <input type="text" name="buttomText" className="textfield bottom-text" placeholder="Bottom text" />
+        <button onClick={GetMemeImage}>Get a new meme image 🖼</button>
+      </div>
+      <img src={memeImage} alt="Meme image" className="meme-image" />
+    </div>
   )
 }

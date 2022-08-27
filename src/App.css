@@ -15,6 +15,10 @@ body {
   border-radius: 8px;
   font-family: Karla;
 }
+.container {
+  padding-bottom: 10px;
+  background-color: #fff;
+}
 header {
   height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
@@ -37,11 +41,11 @@ header .slogan {
   font-weight: 500;
   margin-top: 20px;
 }
-form {
+.form {
   text-align: center;
   margin-top: 50px;
 }
-form input.submit {
+.form button {
   width: 80%;
   margin-top: 20px;
   height: 40px;
@@ -51,12 +55,21 @@ form input.submit {
   font-weight: 700;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 input.textfield {
   width: 255px;
-  height: 30px;
+  height: 35px;
   margin: 0 25px;
   border: 1px solid #D5D4D8;
   padding: 10px;
   font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.meme-image {
+  width: 75%;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
 }
