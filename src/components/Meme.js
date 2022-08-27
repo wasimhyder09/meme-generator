@@ -18,7 +18,7 @@ export default function Meme() {
         <input type="text" name="buttomText" className="textfield bottom-text" placeholder="Bottom text" />
         <button onClick={GetMemeImage}>Get a new meme image 🖼</button>
       </div>
-      <img src={memeImage} alt="Meme image" className="meme-image" />
+      {memeImage && <img src={memeImage} alt="Meme image" className="meme-image" />}
     </div>
   )
 }
